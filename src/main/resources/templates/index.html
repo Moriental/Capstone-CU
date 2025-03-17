@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오늘 뭐 먹나?</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+<!-- 상단 네비게이션 -->
+<nav class="bg-white shadow-md p-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold text-blue-600">청운맛집</h1>
+    <button class="text-gray-600 text-2xl">&#9776;</button>
+</nav>
+
+<!-- 메인 제목 -->
+<header class="text-center my-8">
+    <h2 class="text-3xl font-bold">우리 오늘 뭐 먹나?</h2>
+    <p class="text-gray-600 mt-2">청운대학교 주변 지역 맛집을 소개합니다.</p>
+    <p class="text-2xl font-bold mt-4">음식 종류</p>
+</header>
+
+<!-- 음식 종류 버튼 -->
+<div class="flex justify-center space-x-3 mb-6">
+    <button class="bg-blue-500 text-white px-4 py-2 rounded-full">모두</button>
+    <button class="bg-gray-300 px-4 py-2 rounded-full">한식</button>
+    <button class="bg-gray-300 px-4 py-2 rounded-full">일식</button>
+    <button class="bg-gray-300 px-4 py-2 rounded-full">양식</button>
+    <button class="bg-gray-300 px-4 py-2 rounded-full">중식</button>
+    <button class="bg-gray-300 px-4 py-2 rounded-full">고기</button>
+    <button class="bg-gray-300 px-4 py-2 rounded-full">분식</button>
+</div>
+
+<!-- 음식 리스트 -->
+<section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="음식 이미지" class="w-full h-48 object-cover">
+            <div class="p-5">
+                <div class="mb-2">
+                    <span class="text-sm bg-green-500 text-white px-2 py-1 rounded-full mr-2">생생정보</span>
+                    <span class="text-sm bg-yellow-500 text-white px-2 py-1 rounded-full">추천</span>
+                </div>
+                <h3 class="text-lg font-bold mb-1">까사데아미고</h3>
+                <p class="text-gray-600 text-sm">음식, 분위기 모두 만족할 만한 양식당</p>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="음식 이미지" class="w-full h-48 object-cover">
+            <div class="p-5">
+                <div class="mb-2">
+                    <span class="text-sm bg-green-500 text-white px-2 py-1 rounded-full mr-2">생생정보</span>
+                    <span class="text-sm bg-yellow-500 text-white px-2 py-1 rounded-full">추천</span>
+                </div>
+                <h3 class="text-lg font-bold mb-1">비스트로구스토</h3>
+                <p class="text-gray-600 text-sm">분위기 좋은 이탈리안 레스토랑</p>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="음식 이미지" class="w-full h-48 object-cover">
+            <div class="p-5">
+                <div class="mb-2">
+                    <span class="text-sm bg-green-500 text-white px-2 py-1 rounded-full mr-2">생생정보</span>
+                    <span class="text-sm bg-yellow-500 text-white px-2 py-1 rounded-full">추천</span>
+                </div>
+                <h3 class="text-lg font-bold mb-1">포에틱시너리</h3>
+                <p class="text-gray-600 text-sm">고급스러운 인스타 감성 스테이크 맛집</p>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="음식 이미지" class="w-full h-48 object-cover">
+            <div class="p-5">
+                <div class="mb-2">
+                    <span class="text-sm bg-green-500 text-white px-2 py-1 rounded-full mr-2">생생정보</span>
+                    <span class="text-sm bg-yellow-500 text-white px-2 py-1 rounded-full">추천</span>
+                </div>
+                <h3 class="text-lg font-bold mb-1">포에틱시너리</h3>
+                <p class="text-gray-600 text-sm">고급스러운 인스타 감성 스테이크 맛집</p>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="음식 이미지" class="w-full h-48 object-cover">
+            <div class="p-5">
+                <div class="mb-2">
+                    <span class="text-sm bg-green-500 text-white px-2 py-1 rounded-full mr-2">생생정보</span>
+                    <span class="text-sm bg-yellow-500 text-white px-2 py-1 rounded-full">추천</span>
+                </div>
+                <h3 class="text-lg font-bold mb-1">포에틱시너리</h3>
+                <p class="text-gray-600 text-sm">고급스러운 인스타 감성 스테이크 맛집</p>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="음식 이미지" class="w-full h-48 object-cover">
+            <div class="p-5">
+                <div class="mb-2">
+                    <span class="text-sm bg-green-500 text-white px-2 py-1 rounded-full mr-2">생생정보</span>
+                    <span class="text-sm bg-yellow-500 text-white px-2 py-1 rounded-full">추천</span>
+                </div>
+                <h3 class="text-lg font-bold mb-1">포에틱시너리</h3>
+                <p class="text-gray-600 text-sm">고급스러운 인스타 감성 스테이크 맛집</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
