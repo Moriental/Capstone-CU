@@ -7,7 +7,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
@@ -24,12 +23,6 @@ import java.util.UUID;
 @Service
 public class KaKaoPlaceCrawler {
     private final String imageSavePath = "src/main/resources/static/images/";
-    private final DataSourceTransactionManagerAutoConfiguration dataSourceTransactionManagerAutoConfiguration;
-
-    public KaKaoPlaceCrawler(DataSourceTransactionManagerAutoConfiguration dataSourceTransactionManagerAutoConfiguration) {
-        this.dataSourceTransactionManagerAutoConfiguration = dataSourceTransactionManagerAutoConfiguration;
-    }
-
     public Place crawlKakaoMap() {
         List<Menu> menus = new ArrayList<>();
         WebDriverManager.chromedriver().setup(); // 드라이버 자동 설치
