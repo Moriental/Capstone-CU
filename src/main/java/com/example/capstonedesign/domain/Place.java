@@ -20,12 +20,15 @@ public class Place {
     private String address;
 
     private String phoneNumber;
-    private String openingHours;
     private String image;
-    private String starRate;
+    private String food_type;
+    private double starRate;
 
     @OneToMany(mappedBy = "place",cascade = CascadeType.ALL,orphanRemoval = true)
     public List<Menu> menus = new ArrayList<>();
+
+    @OneToMany(mappedBy = "place",cascade = CascadeType.ALL,orphanRemoval = true)
+    public List<OpeningHours> hoursList = new ArrayList<>();
 
     // 메뉴 추가 편의 메서드
     public void addMenu(Menu menu) {
@@ -36,5 +39,14 @@ public class Place {
     public void removeMenu(Menu menu) {
         menus.remove(menu);
         menu.setPlace(null);
+    }
+
+    public void addOpeningHours(OpeningHours openingHours) {
+        hoursList.add(openingHours);
+        openingHours.setPlace(this);
+    }
+    public void removeOpeningHours(OpeningHours openingHours) {
+        hoursList.remove(openingHours);
+        openingHours.setPlace(null);
     }
 }

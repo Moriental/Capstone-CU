@@ -34,5 +34,4 @@ public class MainController {
         placeRepository.save(place);
         return "redirect:/";
     }
-
 }
