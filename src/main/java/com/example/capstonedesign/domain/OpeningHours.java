@@ -17,8 +17,7 @@ public class OpeningHours {
     private String closeTime; // 종료일
     private String breakStartTime; // 브레이크 시작 시간
     private String breakEndTime; // 브레이크 끝나는 시간
-    private String note; //휴무일인지
-
+    private String note;
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "place_id")
     private Place place;
