@@ -104,7 +104,7 @@ public class KaKaoPlaceCrawler {
 
                 crawlName(driver, place);
                 crawlCategory(driver, place);
-                place.setFood_type(foodType);
+                place.setFoodType(foodType);
                 crawlAddress(driver, place);
                 crawlPhoneNumber(driver, place);
                 crawlMenus(driver, place);

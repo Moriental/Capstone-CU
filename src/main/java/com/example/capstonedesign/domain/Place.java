@@ -21,7 +21,7 @@ public class Place {
 
     private String phoneNumber;
     private String image;
-    private String food_type;
+    private String foodType;
     private double starRate;
 
     @OneToMany(mappedBy = "place",cascade = CascadeType.ALL,orphanRemoval = true)
